@@ -1,0 +1,1 @@
+function Saludo({ nombre }) { return <h2>¡Hola, {nombre}! Bienvenido a mi web</h2>; } export default Saludo;
