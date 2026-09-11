@@ -5,7 +5,8 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Saludo from './Saludo'
 import { motion } from 'framer-motion';
-
+import SobreMi from './SobreMi'
+import Proyectos from './Proyectos'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,9 @@ function App() {
         <p className="text-blue-400 text-lg">Estoy aprendiendo React 🚀</p> 
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} onClick={() => setContador(contador + 1)} className="bg-black-400 text-yellow px-6 py-3 rounded-lg hover:bg-red-900"> Clics: {contador} 
           </motion.button> 
+          
+          <SobreMi />
+          <Proyectos />
         </motion.div>
       
       </section>
