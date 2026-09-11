@@ -5,24 +5,21 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Saludo from './Saludo'
 
+
 function App() {
   const [count, setCount] = useState(0)
+  const [contador, setContador] = useState(0);
 
   return (
     <>
-    <Saludo nombre="Antonella"/>
-    <Saludo nombre="Janeira"/>
+    
+    
       <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Hola soy Antonella</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
+        <div className="min-h-screen bg-red-200 flex flex-col items-center justify-center gap-6 p-6"> 
+          <Saludo nombre="Antonella" /> 
+        <p className="text-blue-400 text-lg">Estoy aprendiendo React 🚀</p> 
+        <button onClick={() => setContador(contador + 1)} className="bg-black-400 text-yellow px-6 py-3 rounded-lg hover:bg-red-900"> Clics: {contador} 
+          </button> 
         </div>
         <button
           type="button"
